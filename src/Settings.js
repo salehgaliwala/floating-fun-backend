@@ -37,7 +37,7 @@ function App() {
   useEffect(() => {
     async function fetchSettings() {
       try {
-        const response = await fetch('https://balloontown-node.vercel.app/getSettings'); // Modify this endpoint as needed
+        const response = await fetch('https://floating-fun-server.vercel.app/getSettings'); // Modify this endpoint as needed
         const data = await response.json();
 
         if (response.ok) {
@@ -72,7 +72,7 @@ function App() {
 
   const handleLogin = async() => {
     try {
-      const response = await fetch('https://balloontown-node.vercel.app/login', {
+      const response = await fetch('https://floating-fun-server.vercel.app/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ function App() {
     chargeNote: chargeNote, 
   };
   try {
-    const response = await fetch('https://balloontown-node.vercel.app/saveSettings', {
+    const response = await fetch('https://floating-fun-server.vercel.app/saveSettings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
